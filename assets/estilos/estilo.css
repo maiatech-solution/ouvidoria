@@ -140,19 +140,24 @@ header .img-logo img{
     align-items: center;
     gap: 30px;
 }
+#canais #canais-body .card-canais .end-canais{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
 
 #canais #canais-body .card-canais i{
-    font-size: 50px;
+    font-size: 30px;
     color: black;
     border: 3px solid black;
-    border-radius: 50%;
-    padding: 25px;
+    border-radius: 50px;
+    padding: 20px;
 }
 
-#canais #canais-body .card-canais:nth-child(3) i,#canais #canais-body .card-canais:nth-child(4) i{
-    border: none;
-    font-size: 80px;
-}
 
 #canais #canais-body .card-canais h3{
     font-size: 25px;
