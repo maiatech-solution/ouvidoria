@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 85%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+    height: 150px;
+}
+
+header .img-logo{
+    width: 4rem;
+}
+
+header .img-logo img{
+    width: 100%;
+}
+
+header p .text-localizacao{
+}
+
+.menu{
+    display: flex;
+    gap: 100px;
+}
