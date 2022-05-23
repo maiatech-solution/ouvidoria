@@ -94,7 +94,28 @@ header .img-logo img{
 }
 /* -------------- main ----- */
 .main{
-    height: 100vh;
+    border: red solid 1px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.main .card-demandas{
+    width: 400px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.main .card-demandas .title-demandas{
+    background-color: rgb(2,48,124);
+}
+
+.main .card-demandas .footer-demandas{
+    background-color: rgba(2, 49, 124, 0.623);
 }
 
 /* --------------- canais de atendimento ------------- */
@@ -104,6 +125,7 @@ header .img-logo img{
     border-bottom: 3px solid rgb(2,48,124);
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 #canais #canais-header{
@@ -203,6 +225,7 @@ footer{
     height: 500px;
     width: 100%;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 footer #footer1{
@@ -218,7 +241,7 @@ footer #footer1{
 }
 
 footer #footer1 #brasao-footer{
-    width: 30%;
+    width: 25%;
     text-align: center;
 }
 
@@ -229,15 +252,29 @@ footer #footer1 img{
 footer #footer1 #links-footer{
     display: flex;
     flex-direction: row;
-    width: 70%;
-    text-align: center;
-    justify-content: center;
-    gap: 150px;
+    width: 75%;
+    justify-content: space-around;
+    overflow: hidden;
 }
 
 footer #footer1 #links-footer .links-footer-texts{
     display: flex;
     flex-direction: column;
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 2.5em;
+}
+
+footer #footer1 #links-footer .links-footer-texts h3{
+    color: white;
+    font-weight: 500;
+}
+
+footer #footer1 #links-footer .links-footer-texts a{
+    color: #5a6d99;
+    font-weight: 500;
 }
 
 footer #footer2{
@@ -245,4 +282,12 @@ footer #footer2{
     height: 65px;
     background-color: rgb(40,40,40);
     border-top: rgb(58, 58, 58) 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footer2 p{
+    color: rgba(128, 128, 128, 0.692);
+    font-weight: 100;
 }
