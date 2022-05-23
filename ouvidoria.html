@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/estilos/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +17,7 @@
     <title>Ouvidoria - FASPM</title>
 </head>
 
-<body>
+<body class="bg-light">
 
     <header class="container">
         <div class="img-logo">
@@ -41,8 +40,40 @@
     </header>
 
     <div id="menu-secundario">
-        <a href="#" class="link-menu-secundario">FASPM</a>
-        <a href="#" class="link-menu-secundario">Transparência pública</a>
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              FASPM
+            </button>
+            <div class="dropdown-menu bg-dark rounded-0" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item text-light" href="https://faspmpa.com.br/quem-somos/">QUEM SOMOS</a>
+              <a class="dropdown-item text-light" href="https://faspmpa.com.br/representacoes/">REPRESENTAÇÕES</a>
+              <a class="dropdown-item text-light" href="https://faspmpa.com.br/fale-conosco/">CONTATOS</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Transparência pública
+            </button>
+            <div class="dropdown-menu bg-dark rounded-0" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item text-light" href="https://faspmpa.com.br/sobre-a-lai/">Sobre a LAI</a>
+              <a class="dropdown-item text-light" href="https://faspmpa.com.br/prestacoes-de-contas-anuais-auditorias-externas/">Perguntas frequentes</a>
+              <a class="dropdown-item text-light" href="#">Prestação de contas anuais & Auditorias externas</a>
+              <a class="dropdown-item text-light" href="#">Convênios</a>
+              <a class="dropdown-item text-light" href="#">Licitações & Contratos</a>
+              <a class="dropdown-item text-light" href="#">Pregão eletrônico</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cadastre-se
+            </button>
+            <div class="dropdown-menu bg-dark rounded-0" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item text-light" href="#">Seja um associado</a>
+              <a class="dropdown-item text-light" href="#">Fornecedores</a>
+            </div>
+        </div>
+    
         <a href="#" class="link-menu-secundario">Cadastre-se</a>
         <a href="#" class="link-menu-secundario">Benefícios</a>
         <a href="#" class="link-menu-secundario">Notícias</a>
@@ -59,25 +90,28 @@
         </div>
     </section>
 
-    <section class="container mt-4 mb-4">
+    <section class="container mt-4 mb-4 d-flex justify-content-around">
 
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col">
                 <div class="card d-flex" style="width: 18rem;">
                     <img src="./assets/imgs/ouvidoria.png" class="card-img-top" alt="..." style="height: 150px;">
                     <div class="card-body">
                         <h5 class="card-title">Nova Demanda</h5>
-                        <p class="card-text text-muted">Quando a demanda for relacionada a um serviço prestado pela FASPM.</p>
+                        <p class="card-text text-muted">Quando a demanda for relacionada a um serviço prestado pela
+                            FASPM.</p>
                         <a href="#" class="btn btn-primary"><i class="fa-solid fa-plus justify-content-center"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="./assets/imgs/pesquisa-ouvidoria.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <img src="./assets/imgs/pesquisa-ouvidoria.png" class="card-img-top" alt="..."
+                        style="height: 150px;">
                     <div class="card-body">
                         <h5 class="card-title">Consultar Demanda</h5>
-                        <p class="card-text text-muted">Possibilita visualizar informações sobre demanda anteriormente cadastrada.</p>
+                        <p class="card-text text-muted">Possibilita visualizar informações sobre demanda anteriormente
+                            cadastrada.</p>
                         <a href="#" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </div>
@@ -97,7 +131,7 @@
     </section>
 
     <main id="canais" class="container">
-        
+
         <div id="canais-header">
             <h2>Canais de Atendimento</h2>
         </div>
@@ -207,6 +241,10 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </html>

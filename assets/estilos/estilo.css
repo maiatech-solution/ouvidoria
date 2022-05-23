@@ -40,6 +40,11 @@ header .img-logo img{
     image-rendering: auto;
 }
 
+#localizacao p{
+    margin: 0;
+    padding: 0;
+}
+
 #text-localizacao1, #text-numero{
     font-weight: bold;
     font-size: 14px;
