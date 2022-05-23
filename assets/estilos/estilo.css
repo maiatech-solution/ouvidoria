@@ -92,7 +92,35 @@ header .img-logo img{
     color: rgb(2,48,124);
 
 }
-/* -------------- main ----- */
+
+/* ------------ section banner --------- */
+
+#banner-ouvidoria{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+#banner-ouvidoria #tamanho-img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#banner-ouvidoria #card-ouvidoria{
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+}
+
+#banner-ouvidoria #card-ouvidoria h1{
+    color: white;
+    font-size: 40px;
+}
+
+/* -------------- main ouvidoria ----- */
 .main{
     display: flex;
     width: 100%;
