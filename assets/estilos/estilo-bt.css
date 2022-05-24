@@ -15,7 +15,7 @@ a{
 .dropdown-item:focus, .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: #245688;
+    background-color: rgb(2,32,82);
 }
 
 .font-weight-bold {
@@ -31,11 +31,19 @@ a{
 }
 
 .card:hover{
-    border: 1px solid #245688;
+    border: 1px solid #0d6efd;
 }
 
 .shadow {
     box-shadow: rgb(0 0 0 / 15%) -2px 0.5rem 2rem !important;
+}
+
+.bg-blue_fas{
+    background-color: rgb(2,32,82);
+}
+
+.border-blue_fas{
+    border: 5px solid rgb(2,32,82);
 }
 
 /*------------------------- media */
@@ -49,7 +57,7 @@ a{
 	.nav-item .submenu-left{ 
 		right:100%; left:auto;
 	}
-	.dropdown-menu > li:hover{ background-color: #245688 }
+	.dropdown-menu > li:hover{ background-color: rgb(2,32,82) }
 	.dropdown-menu > li:hover > .submenu{ display: block; }
 }	
 /* ============ desktop view .end// ============ */
