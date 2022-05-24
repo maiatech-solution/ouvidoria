@@ -11,6 +11,10 @@ a{
     color: black;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -23,10 +27,7 @@ header{
     border-bottom: 1px solid rgba(128, 128, 128, 0.651);
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 150px;
-    margin: 0;
-    padding: 0;
 }
 
 header .img-logo{
@@ -51,16 +52,10 @@ header .img-logo img{
     color: rgba(0, 0, 0, 0.781);
 }
 
-#text-localizacao2{
+#text-localizacao2, #text-numero{
     color: gray;
     font-size: 14px;
     font-weight: 500;
-}
-
-.menu{
-    display: flex;
-    gap: 100px;
-    align-items: baseline;
 }
 
 #butao-associe{
@@ -71,35 +66,16 @@ header .img-logo img{
     background: rgb(2,48,124);
 }
 
+#butao-associe:hover{
+    background: rgba(2, 49, 124, 0.938);
+}
+
 #butao-associe a{
     color: white;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-/* -------------- Menu secundário ---------------- */
-#menu-secundario{
-    display: flex;
-    width: 85%;
-    align-items: center;
-    padding: 20px 0px;
-}
-
-#menu-secundario .link-menu-secundario{
-    width: auto;
-    border-right: 1px solid rgba(128, 128, 128, 0.651);
-    padding: 0 30px;
-    font-weight: 500;
-}
-
-#menu-secundario .link-menu-secundario:nth-child(1){
-    padding-left: 0;
-}
-
-#menu-secundario .link-menu-secundario:nth-child(7){
-    border: none;
-    color: rgb(2,48,124);
-}
 
 /* ------------ section banner --------- */
 
