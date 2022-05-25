@@ -114,6 +114,10 @@ header .img-logo img{
     color: rgb(100, 100, 100);
 }
 
+#card-auto-altura{
+    height: 250px;
+}
+
 /* --------------- informações ------------- */
 
 #informacao p{
