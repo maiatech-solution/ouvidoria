@@ -63,7 +63,7 @@ a{
 /* ============ desktop view .end// ============ */
 
 /* ============ small devices ============ */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .dropdown-menu .dropdown-menu{
       margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
   }
@@ -71,7 +71,8 @@ a{
 
 /* =========== scrol nav ========= */
 @media (max-width: 991px) {
-    .md-overflow-scroll{
+    .md-overflow-scroll-x{
         overflow-x: scroll;
+        height: auto;
     }
 }
