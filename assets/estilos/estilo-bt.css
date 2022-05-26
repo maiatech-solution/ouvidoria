@@ -1,4 +1,4 @@
-a{
+a {
     text-decoration: none;
 }
 
@@ -12,25 +12,27 @@ a{
     display: flex;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: rgb(2,32,82);
+    background-color: rgb(2, 32, 82);
 }
 
 .font-weight-bold {
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0);
+    color: rgba(0, 0, 0);
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #245688;
 }
 
-.card:hover{
+.card:hover {
     border: 1px solid #0d6efd;
 }
 
@@ -38,41 +40,57 @@ a{
     box-shadow: rgb(0 0 0 / 15%) -2px 0.5rem 2rem !important;
 }
 
-.bg-blue_fas{
-    background-color: rgb(2,32,82);
+.bg-blue_fas {
+    background-color: rgb(2, 32, 82);
 }
 
-.border-blue_fas{
-    border: 5px solid rgb(2,32,82);
+.border-blue_fas {
+    border: 5px solid rgb(2, 32, 82);
 }
 
 /*------------------------- media */
 @media all and (min-width: 992px) {
-	.dropdown-menu li{ position: relative; 	}
-	.nav-item .submenu{ 
-		display: none;
-		position: absolute;
-		left:100%; top:-7px;
-	}
-	.nav-item .submenu-left{ 
-		left:100%; right: auto;
-	}
-	.dropdown-menu > li:hover{ background-color: rgb(2,32,82) }
-	.dropdown-menu > li:hover > .submenu{ display: block; }
-}	
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .nav-item .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+
+    .nav-item .submenu-left {
+        left: 100%;
+        right: auto;
+    }
+
+    .dropdown-menu>li:hover {
+        background-color: rgb(2, 32, 82)
+    }
+
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+}
+
 /* ============ desktop view .end// ============ */
 
 /* ============ small devices ============ */
 @media (max-width: 992px) {
-  .dropdown-menu .dropdown-menu{
-      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-  }
-}
-
-/* =========== scrol nav ========= */
-@media (max-width: 991px) {
-    .md-overflow-scroll-x{
-        overflow-x: scroll;
-        height: auto;
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
     }
+    .md-overflow-scroll-x {
+        overflow-y: visible;
+    }
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+    .nav-item .submenu-left{ 
+		bottom:100%; left: auto;
+	}
 }
