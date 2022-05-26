@@ -38,6 +38,15 @@ a {
     justify-content: center;
 }
 
+.dropdown-menu.show {
+    display: block;
+    top: 100%;
+    left: -15%;
+    margin-top: 0.125rem;
+    margin-bottom: -29.875rem;
+    right: auto;
+}
+
 .card:hover {
     border: 1px solid #0d6efd;
 }
@@ -50,14 +59,27 @@ a {
     background-color: rgb(2, 32, 82);
 }
 
+.bg-blue_fas_1 {
+    background-color: rgb(22, 45, 85);
+}
+
 .border-blue_fas {
     border: 5px solid rgb(2, 32, 82);
 }
 
-/*------------------------- media */
-@media (min-width: 1024px) {
+/*------------------------- maior que 768 */
+@media (min-width: 768px) {
+
     .dropdown-menu li {
         position: relative;
+    }
+
+    .dropdown-menu li a:hover{
+        background-color: rgb(34, 35, 36);
+    }
+
+    .dropdown-menu li ul li a:hover{
+        background-color: rgb(2, 32, 82);
     }
 
     .nav-item .submenu {
@@ -73,7 +95,7 @@ a {
     }
 
     .dropdown-menu>li:hover {
-        background-color: rgb(2, 32, 82)
+        background-color: rgb(34, 35, 36);
     }
 
     .dropdown-menu>li:hover>.submenu {
@@ -81,12 +103,30 @@ a {
     }
 }
 
-/* ============ desktop view .end// ============ */
+/* ============ Menores que 768px ============ */
 
-/* ============ small devices ============ */
+@media (max-width: 768px) {
+    
+    .dropdown-menu>li:hover {
+        background-color: rgb(27, 28, 31);
+    }
 
-@media (max-width: 1024px){
-    .navbar-expand .navbar-collapse {
-        display: none !important;
+    .dropdown-menu li a:hover{
+        background-color: rgb(34, 35, 36);
+    }
+
+    .dropdown-menu li ul li a:hover{
+        background-color: rgb(2, 32, 82);
+    }
+
+    .nav-item .submenu {
+        display: none;
+        position: absolute;
+        right: 30%;
+    }
+
+
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
     }
 }
