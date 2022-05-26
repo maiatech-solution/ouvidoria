@@ -32,6 +32,12 @@ a {
     color: #245688;
 }
 
+.navbar-expand .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: center;
+}
+
 .card:hover {
     border: 1px solid #0d6efd;
 }
