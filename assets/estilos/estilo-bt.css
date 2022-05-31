@@ -4,8 +4,8 @@ a {
 
 .btn-primary {
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: var(--secundaria);
+    border: none;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -16,7 +16,7 @@ a {
 .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: rgb(2, 32, 82);
+    background-color: var(--hover);
 }
 
 .font-weight-bold {
@@ -56,19 +56,19 @@ a {
 }
 
 .bg-blue_fas {
-    background-color: rgb(2, 32, 82);
+    background-color: var(--principal);
 }
 
 .bg-blue_fas_1 {
-    background-color: rgb(22, 45, 85);
+    background-color: var(--principal);
 }
 
 .border-blue_fas {
-    border: 5px solid rgb(2, 32, 82);
+    border: 5px solid var(--principal);
 }
 
 .border-fas{
-    border-bottom: #0d6efd 1px solid;
+    border-bottom: var(--bordas) 1px solid;
 }
 
 .card-body {
@@ -136,7 +136,6 @@ a {
         position: absolute;
         right: 30%;
     }
-
 
     .dropdown-menu>li:hover>.submenu {
         display: block;

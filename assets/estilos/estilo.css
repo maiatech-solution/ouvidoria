@@ -1,10 +1,19 @@
+:root {
+    --principal: rgb(2,32,82);
+    --secundaria: rgb(0, 55, 151);
+    --titles: rgb(81, 129, 218);
+    --hover: rgba(30, 73, 148, 0.801);
+    --bordas: rgb(50, 144, 233);
+    --fonte_principal: 'Poppins';
+    --fonte_secundaria: 'Roboto';
+  }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    
 }
 
 a{
@@ -21,7 +30,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte_principal)
 }
 
 header{
@@ -63,11 +72,11 @@ header .img-logo img{
     height: 50px;
     border-radius: 100px;
     border: none;
-    background: rgb(2,48,124);
+    background: var(--principal);
 }
 
 #butao-associe:hover{
-    background: rgba(2, 49, 124, 0.938);
+    background: var(--secundaria);
 }
 
 #butao-associe a{
@@ -121,13 +130,13 @@ header .img-logo img{
 
 #informacao p{
     color: gray;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fonte_secundaria);
 }
 
 /* ----------------- footer ---------- */
 footer .text-a-footer{
     color: gray;
-    font-family: 'Poppins';
+    font-family: var(--fonte_principal);
 }
 
 footer .text-a-footer:hover{
@@ -135,7 +144,7 @@ footer .text-a-footer:hover{
 }
 
 footer .title-footer{
-    font-family: 'Poppins';
+    font-family: var(--fonte_principal);
     font-size: 20px;
 }
 
