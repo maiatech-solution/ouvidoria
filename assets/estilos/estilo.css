@@ -129,7 +129,7 @@ header .img-logo img{
 /* --------------- informações ------------- */
 
 #informacao p{
-    color: var(--titles);
+    color: gray;
     font-family: var(--fonte_secundaria);
 }
 
