@@ -129,7 +129,7 @@ header .img-logo img{
 /* --------------- informações ------------- */
 
 #informacao p{
-    color: gray;
+    color: var(--titles);
     font-family: var(--fonte_secundaria);
 }
 
@@ -140,7 +140,7 @@ footer .text-a-footer{
 }
 
 footer .text-a-footer:hover{
-    color: white;
+    color: var(--bordas);
 }
 
 footer .title-footer{
