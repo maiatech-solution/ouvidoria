@@ -12,6 +12,18 @@ a {
     display: flex;
 }
 
+.btn-primary-pro {
+    background-color: var(--principal);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.btn-primary-pro:hover {
+    background-color: var(--secundaria);
+}
+
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: #16181b;

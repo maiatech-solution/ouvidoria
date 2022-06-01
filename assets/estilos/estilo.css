@@ -179,16 +179,25 @@ input[type=number] {
    appearance: textfield;
 }
 
+
 .forms-ouvidoria{
     width: 70%;
-    height: 250px;
-    border: 1px solid red;
+    border: 1px solid gray;
+    margin: 20px 0;
 }
 
-.forms-ouvidoria input{
+.forms-ouvidoria .form-group input{
     width: 100%;
+    margin-bottom: 10px;
 }
 
-.forms-ouvidoria input:nth-child(4){
-    width: auto;
+.form-group label{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#sex-input{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

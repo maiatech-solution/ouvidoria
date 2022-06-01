@@ -336,19 +336,19 @@
             <div class="col-6">
                 <div class="form-group">
                     <label for="nome" >Nome: (*)</label>
-                    <input type="text" name="nome" id="nome" placeholder="Informe seu nome completo" required>
+                    <input required type="text" name="nome" id="nome" placeholder="Informe seu nome completo">
                 </div>
             </div>
             <div class="col-6">
                 <div class="form-group">
                     <label for="cpf">CPF: (*)</label>
-                    <input type="number" name="cpf" id="cpf" placeholder="___.___.___-__" required>
+                    <input required type="number" name="cpf" id="cpf" placeholder="___.___.___-__">
                 </div>
             </div>
             <div class="col-12">
                 <div class="form-group">
-                    <label for="cpf">E-mail: (*)</label>
-                    <input type="number" name="cpf" id="cpf" placeholder="___.___.___-__" required>
+                    <label for="email">E-mail: (*)</label>
+                    <input required type="email" name="email" id="email" placeholder="Informe seu E-mail">
                 </div>
             </div>
             <div class="col-6">
@@ -358,17 +358,20 @@
                 </div>
             </div>
             <div class="col-6">
-                <div class="form-group">
-                    <label for="nasc">Sexo</label>
-                    <input type="radio" name="sex" id="sexM" value="M">Masculino
-                    <input type="radio" name="sex" id="sexF" value="F">Feminino
+                <div class="">
+                    <div class="">
+                        <label for="sex">Sexo:</label>
+                    </div>
+                    <div id="sex-input">
+                        <input type="radio" name="sex" id="sexM" value="M" checked><span> Masculino</span>
+                        <input type="radio" name="sex" id="sexF" value="F"><span> Feminino</span>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="col-12 d-flex w-100">
-                <button class="text-center w-50" type="submit" onclick="alerta()">Prosseguir</button>
-            </div>
         </div>
-        </div>
+            <button class="w-100 text-light btn btn-primary-pro rounded-0" type="submit" onclick="alerta()">Enviar</button>
+    </div>
         
     </section>
     
