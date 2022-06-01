@@ -8,6 +8,9 @@ function alerta(){
     
     if(!nome || !cpf || !email){
         alert("Preenche todos os campos abaixo");
+    }else{
+        alert(`Solicitação enviada!
+Sr(a). ${nome} seu protocolo foi enviado para seu e-mail.`);
     }
     
 

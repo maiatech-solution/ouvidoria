@@ -152,4 +152,7 @@ a {
     .dropdown-menu>li:hover>.submenu {
         display: block;
     }
+    .forms-ouvidoria{
+        width: 90%;
+    }
 }
