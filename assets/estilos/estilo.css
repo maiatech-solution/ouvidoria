@@ -180,14 +180,7 @@ input[type=number] {
 }
 
 
-.forms-ouvidoria{
-    width: 70%;
-    border: 1px solid gray;
-    margin: 20px 0;
-}
-
 .forms-ouvidoria .form-group input{
-    width: 100%;
     margin-bottom: 10px;
 }
 
